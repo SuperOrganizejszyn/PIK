@@ -1,12 +1,15 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="PIK:Web exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/PIK_Web_exploded</output-path>
-    <root id="root">
+  <artifact type="war" name="PIK:Web archive">
+    <output-path>$PROJECT_DIR$/out/artifacts/PIK_Web_archive</output-path>
+    <root id="archive" name="PIK_Web archive.war">
       <element id="javaee-facet-resources" facet="PIK/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="PIK" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
       </element>
     </root>
   </artifact>
