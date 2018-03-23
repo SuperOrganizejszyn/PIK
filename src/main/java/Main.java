@@ -28,5 +28,9 @@ public class Main {
     String index() {
         return "helloworld.html";
     }
+    @RequestMapping("/hello2")
+    String hello2() {
+        return "helloworld.html";
+    }
 
 }
