@@ -1,5 +1,7 @@
+package pik;
+
 public class SomeClass {
-    int doSomething() {
+    public int doSomething() {
         return 0;
     }
 }
