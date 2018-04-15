@@ -135,7 +135,7 @@
 				</executions>
 				<configuration>
 					<nodeVersion>v9.11.1</nodeVersion>
-
+					<workingDirectory>client</workingDirectory>
 					<!-- Change if it is uploaded to serer -->
 					<npmVersion>4.4.0</npmVersion>
 					<npmDownloadRoot>http://dram.pl:8082/repository/raw_repo/npm/</npmDownloadRoot>
