@@ -129,7 +129,6 @@
 						</goals>
 						<configuration>
 							<arguments>install</arguments>
-							<workingDirectory>client</workingDirectory>
 						</configuration>
 					</execution>
 				</executions>
@@ -139,7 +138,6 @@
 					<!-- Change if it is uploaded to serer -->
 					<npmVersion>4.4.0</npmVersion>
 					<npmDownloadRoot>http://dram.pl:8082/repository/raw_repo/npm/</npmDownloadRoot>
-					<workingDirectory>client</workingDirectory>
 				</configuration>
 			</plugin>
 			<plugin>
