@@ -11,9 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @ToString @EqualsAndHashCode
 public class Task {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Column(name = "name")
     private @NonNull String name;
 }
