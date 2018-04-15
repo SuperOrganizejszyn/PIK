@@ -58,7 +58,6 @@
     "npm": "3.10.10"
   },
   "cacheDirectories": [
-    "node_modules",
     "client/node_modules"
   ]
 }
