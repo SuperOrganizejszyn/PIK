@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "cd client && ng",
-    "start": "cd client && node server.js",
-    "build": "cd client && ng build --prod",
-    "test": "cd client && ng test",
-    "lint": "cd client && ng lint",
-    "postinstall": "cd client && ng build --aot -prod",
-    "e2e": "cd client && ng e2e"
+    "ng": "(cd client && ng)",
+    "start": "(cd client && node server.js)",
+    "build": "(cd client && ng build --prod)",
+    "test": "(cd client && ng test)",
+    "lint": "(cd client && ng lint)",
+    "postinstall": "(cd client && ng build --aot -prod)",
+    "e2e": "(cd client && ng e2e)"
   },
   "private": true,
   "dependencies": {
