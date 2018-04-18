@@ -1,4 +1,6 @@
 language: java
+install:
+        - npm install -g npm@2
 deploy:
   provider: heroku
   api_key:
