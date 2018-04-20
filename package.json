@@ -11,7 +11,7 @@
     "postinstall": "(cd client && ng build --aot -prod)",
     "e2e": "(cd client && ng e2e)"
   },
-  // "private": true,
+  "private": true,
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/cdk": "^5.2.4",
@@ -32,27 +32,27 @@
     "typescript": "~2.5.3",
     "zone.js": "^0.8.19"
   },
-  // "devDependencies": {
-  //   "@angular/cli": "~1.7.4",
-  //   "@angular/compiler-cli": "^5.2.0",
-  //   "@angular/language-service": "^5.2.0",
-  //   "@types/jasmine": "~2.8.3",
-  //   "@types/jasminewd2": "~2.0.2",
-  //   "@types/node": "~6.0.60",
-  //   "codelyzer": "^4.0.1",
-  //   "enhanced-resolve": "^3.3.0",
-  //   "jasmine-core": "~2.8.0",
-  //   "jasmine-spec-reporter": "~4.2.1",
-  //   "karma": "~2.0.0",
-  //   "karma-chrome-launcher": "~2.2.0",
-  //   "karma-coverage-istanbul-reporter": "^1.2.1",
-  //   "karma-jasmine": "~1.1.0",
-  //   "karma-jasmine-html-reporter": "^0.2.2",
-  //   "protractor": "~5.1.2",
-  //   "ts-node": "~4.1.0",
-  //   "tslint": "~5.9.1",
-  //   "typescript": "~2.5.3"
-  // },
+  "devDependencies": {
+    "@angular/cli": "~1.7.4",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/language-service": "^5.2.0",
+    "@types/jasmine": "~2.8.3",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/node": "~6.0.60",
+    "codelyzer": "^4.0.1",
+    "enhanced-resolve": "^3.3.0",
+    "jasmine-core": "~2.8.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~2.0.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "~5.1.2",
+    "ts-node": "~4.1.0",
+    "tslint": "~5.9.1",
+    "typescript": "~2.5.3"
+  },
   "engines": {
     "node": "9.11.1",
     "npm": "4.4.0"
