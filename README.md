@@ -1,4 +1,7 @@
 # PIK
+# Requirements
+
+Java JRE 1.8+
 
 # How to run project?
 
@@ -8,5 +11,5 @@ mvnw clean install
 ```
 And run
 ```
-heroku local
+java -jar target/pik-0.0.1-SNAPSHOT.jar
 ```
