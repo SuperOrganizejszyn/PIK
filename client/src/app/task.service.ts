@@ -6,7 +6,7 @@ import {Observable} from "rxjs/Observable";
 export class TaskService {
 
   constructor(private http: HttpClient) { }
-  public API = '//localhost:8080';
+  public API = 'localhost:8080';
   public TASK_API = this.API + '/tasks';
 
   getAll(): Observable<any> {
