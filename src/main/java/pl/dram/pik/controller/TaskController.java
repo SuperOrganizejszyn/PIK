@@ -1,9 +1,6 @@
 package pl.dram.pik.controller;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.dram.pik.entity.Task;
 import pl.dram.pik.repository.TaskRepository;
 import pl.dram.pik.service.TaskService;
@@ -32,5 +29,23 @@ public class TaskController {
     @CrossOrigin(origins = "http://localhost:4200")
     public Optional<Task> getTask(@PathVariable String id){
         return taskService.getTask(id);
+    }
+
+    @PostMapping("/tasks")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public void addTask(@RequestBody Task task, @PathVariable String id){
+        taskService.addTask(task);
+    }
+
+    @PutMapping("/tasks/{id}")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public void updateTask(@RequestBody Task task, @PathVariable String id){
+        taskService.updateTask(task);
+    }
+
+    @DeleteMapping("/tasks/{id}")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public void deleteTask(@PathVariable String id){
+        taskService.deleteTask(id);
     }
 }

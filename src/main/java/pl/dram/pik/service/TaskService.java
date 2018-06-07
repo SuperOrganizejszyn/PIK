@@ -25,4 +25,16 @@ public class TaskService {
     public Optional<Task> getTask(String id) {
         return taskRepository.findById(id);
     }
+
+    public void addTask(Task task) {
+        taskRepository.save(task);
+    }
+
+    public void updateTask(Task task) {
+        taskRepository.save(task);
+    }
+
+    public void deleteTask(String id) {
+        taskRepository.deleteById(id);
+    }
 }
