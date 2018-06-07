@@ -1,7 +1,7 @@
 <mat-card>
   <form #taskForm="ngForm" (ngSubmit)="save(taskForm.value)">
     <mat-card-header>
-      <mat-card-title><h2>{{task.name ? 'Edit' : 'Add'}} Car</h2></mat-card-title>
+      <mat-card-title><h2>{{task.name ? 'Edit' : 'Add'}} Task</h2></mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <input type="hidden" name="href" [(ngModel)]="task.href">
@@ -15,7 +15,7 @@
               [disabled]="!taskForm.form.valid">Save</button>
       <button mat-raised-button color="secondary" (click)="remove(task.href)"
               *ngIf="task.href" type="button">Delete</button>
-      <a mat-button routerLink="/car-list">Cancel</a>
+      <a mat-button routerLink="/task-list">Cancel</a>
     </mat-card-actions>
     <mat-card-footer>
       <div class="giphy">
