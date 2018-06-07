@@ -10,7 +10,7 @@ export class TaskService {
   public TASK_API = this.API + '/tasks';
 
   getAll(): Observable<any> {
-    return this.http.get(this.TASK_API + '/all');
+    return this.http.get(this.TASK_API + '/');
   }
   get(id: string) {
     return this.http.get(this.TASK_API + '/' + id);
