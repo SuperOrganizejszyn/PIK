@@ -1,5 +1,5 @@
 create table "task" (
-  id bigserial not null,
+  id text not null,
   name text not null,
   primary key (id)
 );
