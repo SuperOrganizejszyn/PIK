@@ -22,7 +22,7 @@ public class TaskService {
         return taskRepository.findAll();
     }
 
-    public Optional<Task> getTask(String id) {
+    public Optional<Task> getTask(Long id) {
         return taskRepository.findById(id);
     }
 
@@ -34,7 +34,7 @@ public class TaskService {
         taskRepository.save(task);
     }
 
-    public void deleteTask(String id) {
+    public void deleteTask(Long id) {
         taskRepository.deleteById(id);
     }
 }

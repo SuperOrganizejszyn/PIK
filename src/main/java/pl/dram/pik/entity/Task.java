@@ -14,10 +14,10 @@ import java.util.List;
 @ToString @EqualsAndHashCode
 public class Task {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    private String id;
+    private Long id;
     private @NonNull String name;
-    private String description;
-    private @NonNull Date startDate;
-    private @NonNull Date endDate;
+//    private String description;
+//    private @NonNull Date startDate;
+//    private @NonNull Date endDate;
 //    private List<Date> notifiesDate;
 }

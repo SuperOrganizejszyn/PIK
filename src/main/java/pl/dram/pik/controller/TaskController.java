@@ -27,7 +27,7 @@ public class TaskController {
 
     @GetMapping("/tasks/{id}")
     @CrossOrigin(origins = "http://localhost:4200")
-    public Optional<Task> getTask(@PathVariable String id){
+    public Optional<Task> getTask(@PathVariable Long id){
         return taskService.getTask(id);
     }
 
@@ -45,7 +45,7 @@ public class TaskController {
 
     @DeleteMapping("/tasks/{id}")
     @CrossOrigin(origins = "http://localhost:4200")
-    public void deleteTask(@PathVariable String id){
+    public void deleteTask(@PathVariable Long id){
         taskService.deleteTask(id);
     }
 }

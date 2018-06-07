@@ -10,7 +10,7 @@ import pl.dram.pik.entity.Task;
 
 //@RepositoryRestResource
 @CrossOrigin(origins = "http://localhost:4200")
-public interface TaskRepository extends CrudRepository<Task, String> {
+public interface TaskRepository extends CrudRepository<Task, Long> {
 
 
 }
