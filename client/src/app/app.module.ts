@@ -10,6 +10,7 @@ import {TaskListComponent} from './task-list/task-list.component';
 import { TaskEditComponent } from './task-edit/task-edit.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { TaskAddComponent } from './task-add/task-add.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/task-list', pathMatch: 'full' },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     TaskListComponent,
-    TaskEditComponent
+    TaskEditComponent,
+    TaskAddComponent
   ],
   imports: [
     BrowserModule,
