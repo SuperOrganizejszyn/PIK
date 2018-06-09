@@ -19,7 +19,7 @@ public class PikApplication {
 	@Bean
 	ApplicationRunner init(TaskRepository repository){
 		return args -> {
-			Stream.of("Jestem", "Koxem", "hehehehe").forEach(name -> {
+			Stream.of("Test-task-1", "Test-task-2", "Test-task-3").forEach(name -> {
 				Task task = new Task();
 				task.setName(name);
 				repository.save(task);

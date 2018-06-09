@@ -33,7 +33,7 @@ public class TaskController {
 
     @PostMapping("/tasks")
     @CrossOrigin(origins = "http://localhost:4200")
-    public void addTask(@RequestBody Task task, @PathVariable String id){
+    public void addTask(@RequestBody Task task){
         taskService.addTask(task);
     }
 
