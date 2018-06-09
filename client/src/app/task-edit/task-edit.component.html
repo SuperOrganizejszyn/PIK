@@ -12,7 +12,7 @@
     </mat-card-content>
     <mat-card-actions>
       <button mat-raised-button color="primary" type="submit"
-              [disabled]="!taskForm.form.valid">Save</button>
+              [disabled]="!taskForm.form.valid" class="button">Save</button>
       <button mat-raised-button color="secondary" (click)="remove(task.href)"
               *ngIf="task.href" type="button">Delete</button>
       <a mat-button routerLink="/task-list">Cancel</a>

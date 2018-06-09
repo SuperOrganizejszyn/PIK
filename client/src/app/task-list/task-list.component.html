@@ -1,11 +1,9 @@
-<h2>Astra</h2>
-
 <mat-card>
-  <mat-card-header>Task List ASTRA</mat-card-header>
+  <mat-card-header class="tasklist">Task list</mat-card-header>
   <mat-card-content>
     <mat-list>
       <mat-list-item *ngFor="let task of tasks">
-        <img alt="{{task.name}}">
+        <!--<img alt="{{task.name}}">-->
         <h3 mat-line>
           <a mat-button [routerLink]="['/task-edit', task.id]">{{task.name}}</a>
         </h3>
@@ -13,5 +11,5 @@
     </mat-list>
   </mat-card-content>
 
-  <button mat-fab color="primary" [routerLink]="['/task-add']">Add</button>
+  <button mat-fab color="primary" [routerLink]="['/task-add']" class="addbutton">Add</button>
 </mat-card>

@@ -1,0 +1,10 @@
+.toolbar {
+  background-color: #5c61b3;
+}
+
+#welcome {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Cantarell;
+}

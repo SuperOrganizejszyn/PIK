@@ -1,0 +1,14 @@
+.tasklist {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Cantarell;
+}
+
+.addbutton {
+  background-color: #009926;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Cantarell;
+}
