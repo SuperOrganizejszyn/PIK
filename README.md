@@ -35,8 +35,10 @@ where in filename.txt proper JSON is put, e.g.
 ```json
 {
     "id": 10,
-    "name": "NEW-TASK"
+    "name": "NEW-TASK",
+    "description":"Some description",
+    "startDate":null,
+    "endDate":null
 }
 ```
-
 
