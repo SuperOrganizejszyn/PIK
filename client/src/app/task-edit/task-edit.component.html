@@ -8,22 +8,16 @@
       <mat-form-field>
         <input matInput placeholder="Task Name" [(ngModel)]="task.name"
                required name="name" #name>
-      </mat-form-field>
-      <br/>
+      </mat-form-field><br />
       <mat-form-field>
-        <input matInput placeholder="Description" [(ngModel)]="task.description"
-               required name="description" #description>
-      </mat-form-field>
-      <br/>
+        <textarea matInput placeholder="Task description" [(ngModel)]="task.description" #description ngMinlenght = '30' #description></textarea>
+      </mat-form-field><br />
       <mat-form-field>
-        <input matInput placeholder="Start date" [(ngModel)]="task.startDate"
-               required name="startDate" #startDate>
-      </mat-form-field>
-      <br/>
+        <input type="date" [(ngModel)] = "task.startDate" required name = "start date" #startDate>
+      </mat-form-field><br />
       <mat-form-field>
-        <input matInput placeholder="End date" [(ngModel)]="task.endDate"
-               required name="endDate" #endDate>
-      </mat-form-field>
+        <input type="date" [(ngModel)] = "task.stopDate" required name = "start date" #stopDate>
+      </mat-form-field><br />
     </mat-card-content>
     <mat-card-actions>
       <button mat-raised-button color="primary" type="submit"
