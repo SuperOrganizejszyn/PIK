@@ -9,6 +9,21 @@
         <input matInput placeholder="Task Name" [(ngModel)]="task.name"
                required name="name" #name>
       </mat-form-field>
+      <br/>
+      <mat-form-field>
+        <input matInput placeholder="Description" [(ngModel)]="task.description"
+               required name="description" #description>
+      </mat-form-field>
+      <br/>
+      <mat-form-field>
+        <input matInput placeholder="Start date" [(ngModel)]="task.startDate"
+               required name="startDate" #startDate>
+      </mat-form-field>
+      <br/>
+      <mat-form-field>
+        <input matInput placeholder="End date" [(ngModel)]="task.endDate"
+               required name="endDate" #endDate>
+      </mat-form-field>
     </mat-card-content>
     <mat-card-actions>
       <button mat-raised-button color="primary" type="submit"

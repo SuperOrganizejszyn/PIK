@@ -16,8 +16,8 @@ public class Task {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private @NonNull String name;
-//    private String description;
-//    private @NonNull Date startDate;
-//    private @NonNull Date endDate;
+    private String description;
+    private Date startDate;
+    private Date endDate;
 //    private List<Date> notifiesDate;
 }
