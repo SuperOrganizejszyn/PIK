@@ -56,4 +56,10 @@ export class TaskEditComponent implements OnInit {
     }, error => console.error(error));
   }
 
+  validDates() {
+    if ( task.startDate && task.endDate ) {
+      return task.startDate <= task.endDate;
+    }
+    else return true;
+  }
 }
